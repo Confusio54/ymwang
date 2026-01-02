@@ -1,158 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiming Wang | Theoretical Physicist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .latex-font { font-family: 'Times New Roman', Times, serif; }
+    </style>
 </head>
-<style>
-  * {
-    box-sizing: border-box;
-  }
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-  a {
-    color: #0366d6;
-    text-decoration: none;
-  }
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-slate-900 tracking-tight">Yiming Wang</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-blue-600 transition">About</a>
+                    <a href="#research" class="text-slate-600 hover:text-blue-600 transition">Research</a>
+                    <a href="#publications" class="text-slate-600 hover:text-blue-600 transition">Publications</a>
+                    <a href="#cv" class="text-slate-600 hover:text-blue-600 transition">CV</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-  .content {
-    width: 900px;
-    margin: 0 auto;
-    padding: 50px 20px 0 20px;
-    font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-    line-height: 1.5;
-    background-color: white;
-  }
+    <!-- Hero Section -->
+    <section id="about" class="pt-20 pb-16 md:pt-32 md:pb-24 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+            <!-- Profile Image Placeholder -->
+            <div class="md:col-span-1 flex justify-center md:justify-end">
+                <div class="w-48 h-48 md:w-56 md:h-56 rounded-full bg-slate-200 overflow-hidden ring-4 ring-white shadow-lg relative">
+                    <!-- Replace src with your actual photo URL -->
+                    <img src="https://via.placeholder.com/300" alt="Yiming Wang" class="object-cover w-full h-full">
+                </div>
+            </div>
+            
+            <div class="md:col-span-2 space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+                    From Understanding to <span class="text-blue-600">Control</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    I am a theoretical physicist and Ph.D. candidate at <strong class="text-slate-900">Rice University</strong>. My research bridges the gap between foundational condensed matter theory and the frontiers of quantum control.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    My work begins with uncovering the universal principles of <span class="font-semibold text-slate-800">quantum criticality</span> and <span class="font-semibold text-slate-800">strange metallicity</span>, and pivots toward actively engineering these states using <span class="font-semibold text-slate-800">cavity QED</span>, <span class="font-semibold text-slate-800">Floquet dynamics</span>, and <span class="font-semibold text-slate-800">quantum metrology</span>.
+                </p>
+                <div class="flex space-x-4 pt-4">
+                    <a href="mailto:your.email@rice.edu" class="px-6 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition shadow-sm font-medium">Contact Me</a>
+                    <a href="#" class="px-6 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg hover:bg-slate-50 transition shadow-sm font-medium">Download CV</a>
+                </div>
+                <div class="flex space-x-6 pt-2 text-slate-400">
+                    <a href="#" class="hover:text-slate-600 transition"><i class="fab fa-google-scholar fa-lg"></i></a>
+                    <a href="#" class="hover:text-slate-600 transition"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="#" class="hover:text-slate-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  .content h1, h2 {
-    padding-bottom: .3em;
-    border-bottom: 1px solid #eaecef;
-  }
+    <!-- Research Section -->
+    <section id="research" class="py-16 bg-white border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12">Research Highlights</h2>
+            
+            <div class="space-y-16">
+                
+                <!-- Project 1: Shot Noise -->
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-8 order-2 md:order-1">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Probing Strange Metallicity with Shot Noise</h3>
+                        <div class="flex space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded">Science (2023)</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs font-semibold rounded">PRR (2024)</span>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Strange metals defy the quasiparticle paradigm of standard Fermi liquids. In a collaborative study, we observed a surprising suppression of the Fano factor in a heavy fermion strange metal. I developed the theoretical framework demonstrating that this suppression is a direct signature of <strong>quasiparticle loss</strong>, establishing shot noise as a powerful diagnostic for non-Fermi liquid physics.
+                        </p>
+                    </div>
+                    <div class="md:col-span-4 order-1 md:order-2 bg-slate-100 h-48 rounded-lg flex items-center justify-center border border-slate-200">
+                        <span class="text-slate-400 italic text-sm">[Fano Factor Plot Placeholder]</span>
+                    </div>
+                </div>
 
-  .profile td {
-    border: 1px solid #dfe2e5;
-  }
+                <!-- Project 2: Cavity Control -->
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-8 order-2 md:order-1">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Cavity-Engineered Quantum Matter</h3>
+                        <div class="flex space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded">Nature Submission</span>
+                            <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs font-semibold rounded">Active Control</span>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            Pivoting from probing to control, I investigate how coupling quantum critical systems to optical cavities can modify emergent behavior. My recent work shows that critical spin fluctuations can amplify cavity response, driving a <strong>superradiant phase transition</strong> and enhancing intrinsic squeezing. This provides a blueprint for engineering new phases of matter using light-matter interfaces.
+                        </p>
+                    </div>
+                    <div class="md:col-span-4 order-1 md:order-2 bg-slate-100 h-48 rounded-lg flex items-center justify-center border border-slate-200">
+                        <span class="text-slate-400 italic text-sm">[Cavity Setup Schematic]</span>
+                    </div>
+                </div>
 
-  .profile table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
+                <!-- Project 3: Kondo RG -->
+                <div class="grid md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-8 order-2 md:order-1">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Foundational Theory: Kondo-Destruction QCP</h3>
+                        <div class="flex space-x-2 mb-4">
+                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-semibold rounded">Field Theory</span>
+                            <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-semibold rounded">Renormalization Group</span>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            To understand the competition between screening and magnetism, I developed a novel <strong>field-theoretic renormalization group framework</strong> for the Kondo lattice. This work identifies a Kondo-destruction quantum critical point where both magnetism ceases and Landau quasiparticles lose their identity, providing strong theoretical support for the global phase diagram of heavy fermion systems.
+                        </p>
+                    </div>
+                    <div class="md:col-span-4 order-1 md:order-2 bg-slate-100 h-48 rounded-lg flex items-center justify-center border border-slate-200">
+                        <span class="text-slate-400 italic text-sm">[RG Flow Diagram]</span>
+                    </div>
+                </div>
 
-  .content table p {
-    margin-bottom: 16px;
-  }
+            </div>
+        </div>
+    </section>
 
-  .profile-text {
-    width: 75%;
-    padding: 6px 13px;
-  }
+    <!-- Publications Section -->
+    <section id="publications" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-900 mb-12">Selected Publications</h2>
+        
+        <div class="space-y-6">
+            <!-- Paper 1 -->
+            <div class="group relative pl-8 border-l-2 border-slate-200 hover:border-blue-500 transition-colors">
+                <h4 class="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition">
+                    <a href="#">Shot noise in a strange metal</a>
+                </h4>
+                <p class="text-slate-600">
+                    L. Chen*, <strong>Y. Wang*</strong>, et al. (*Co-first authors)
+                </p>
+                <p class="text-slate-500 italic">Science <strong>382</strong>, 6673 (2023)</p>
+            </div>
 
-  .profile-text b {
-    font-weight: 600;
-    font-size: 16px
-  }
+            <!-- Paper 2 -->
+            <div class="group relative pl-8 border-l-2 border-slate-200 hover:border-blue-500 transition-colors">
+                <h4 class="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition">
+                    <a href="#">Theoretical interpretation of Fano factor suppression in heavy fermions</a>
+                </h4>
+                <p class="text-slate-600">
+                    <strong>Y. Wang</strong>, Q. Si
+                </p>
+                <p class="text-slate-500 italic">Phys. Rev. Research <strong>6</strong>, L042045 (2024)</p>
+            </div>
 
-  .profile-text h1 {
-    padding-bottom: .3em;
-    font-weight: 600;
-    font-size: 2em;
-    line-height: 1.25;
-  }
+            <!-- Paper 3 -->
+            <div class="group relative pl-8 border-l-2 border-slate-200 hover:border-blue-500 transition-colors">
+                <h4 class="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition">
+                    <a href="#">Multipartite entanglement in quantum critical metals</a>
+                </h4>
+                <p class="text-slate-600">
+                    Y. Fang*, M. Mahakali*, <strong>Y. Wang*</strong>, et al.
+                </p>
+                <p class="text-slate-500 italic">Nature Communications <strong>16</strong>, 2498 (2025)</p>
+            </div>
 
-  .profile-image {
-    width: 25%;
-    padding: 6px 13px;
+            <!-- Paper 4 -->
+            <div class="group relative pl-8 border-l-2 border-slate-200 hover:border-blue-500 transition-colors">
+                <h4 class="text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition">
+                    <a href="#">Cavity-induced superradiance in quantum critical systems</a>
+                </h4>
+                <p class="text-slate-600">
+                    <strong>Y. Wang</strong>, et al.
+                </p>
+                <p class="text-slate-500 italic">arXiv:2509.26620 (Submitted to Nature Physics)</p>
+            </div>
+            
+            <div class="pt-4">
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center">
+                    See full list on Google Scholar <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  }
-</style>
-<body>
-<div>
-  <div class="content">
-    <div class="profile">
-      <table style="width: 100%">
-        <tbody>
-        <tr>
-          <td class="profile-text">
-            <h1>Yiming Wang</h1>
-            <p><b>Graduate Student</b></p>
-            <p><b>Renmin University of China</b></p>
-            <p><b>ymwang54@outlook.com</b></p>
-          </td>
-          <td class="profile-image">
-            <a href="./ymwang.jpg" target="_blank"> <img src="./ymwang.jpg" style="max-width:100%;" alt="profile photo"></a>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Yiming Wang</h3>
+                <p>Rice University<br>Department of Physics</p>
+            </div>
+            <div class="md:text-right">
+                <p>&copy; 2026 Yiming Wang. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="#" class="hover:text-white transition">Email</a>
+                    <a href="#" class="hover:text-white transition">Twitter/X</a>
+                    <a href="#" class="hover:text-white transition">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <h2>
-      Biography
-    </h2>
-    <p>I am a graduate student in Prof. Rong Yu's theoretical condensed matter group, department of physics, Renmin
-      University of China. I mainly study magnetism, nematicity and quantum phase transitions in iron-based superconductors by employing
-      analytical techniques such as Feynman diagrams, renormalization group and large-N or other mean-field-like theory.</p>
-    <h2>Research Interests &amp; Skills
-    </h2>
-    <p><strong>Interests</strong>: Theoretical quantum many-body physics. Quantum phase transition. Quantum magnetism. Quantum criticality.
-      High-T<sub>c</sub> Superconductivity. Non-equilibrium quantum dynamics. </p>
-    <p><strong>Skills</strong>: Applications of analytical techniques, Mathematica, Matlab.</p>
-    <h2><a id="user-content-educational-background" class="anchor" aria-hidden="true" href="#educational-background">
-    </a>Educational Background
-    </h2>
-    <p>2017-present<br>
-      M.S in Theoretical Physics<br>
-      Renmin University of China<br>
-      Overall GPA: 3.71/4.00<br>
-      Integrated Ranking: 1/22</p>
-    <p>2013-2017<br>
-      B.S in Physics<br>
-      Hebei University<br>
-      Overall GPA 4.15/5.00<br>
-      Integrated Ranking: 2/37</p>
-    <h2><a href="#">
-    </a>Publications
-    </h2>
-    <p><strong>Yiming Wang</strong>, Jianda Wu, and Rong Yu, Quantum phase transitions with emergent symmetries, <em>In Preparation</em></p>
-    <p><strong>Yiming Wang</strong>, Changle Liu, and Rong Yu, Theoretical study on phonon softening in iron pnictides, <em>In Preparation</em></p>
-    <p><strong>Yiming Wang</strong>, Wenjun Hu, Rong Yu, and Qimiao Si, Broken mirror symmetry, incommensurate spin correlations,
-      and <em>B<sub>2g</sub></em> nematic order in iron pnictides, <a
-        href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.100502" rel="nofollow">Phys. Rev. B 100,
-        100502(R)(2019)</a></p>
-    <h2><a id="user-content-research-experience" class="anchor" aria-hidden="true" href="#research-experience">
-    </a>Research Experience
-    </h2>
-    <p>Analytically studied an effective model that describes the magnetic phases and the symmetry-related emergent
-      phases induced by magnetic fluctuations in iron-based superconductors using renormalization group and large-N
-      mean field theory. (to be submitted)</p>
-    <p>Constructed a general Ginzburg-Landau theory that links the nematic order to spatial pattern of magnetic
-      fluctuations. And explained the observed quasi-degeneracy between <em>B<sub>1g</sub></em> and
-      <em>B<sub>2g</sub></em>
-      nematic fluctuations in iron-based superconductors. (published in PRB(R))</p>
-    <p>Explained the observed phonon softening across the nematic transition in iron-based superconductors. (to be
-      submitted)</p>
-    <h2>Awards</h2>
-    <p>2019   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   National Scholarship for Graduate Students<br>
-       2018   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Excellent Students Awards at Renmin University of China<br>
-       2016   &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Excellent Students Awards at Hebei University<br>
-       2015 &amp; 2016 &nbsp;First Prize for Outstanding Student Stipend at Hebei university<br>
-       2015  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   First Prize for The Seventh Chinese Mathematics Competitions (Non-Mathematics)<br>
-       2014  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   First Prize for The Sixth Chinese Mathematics Competitions (Non-Mathematics)</p>
-    <h2><a id="user-content-talks--posters" class="anchor" aria-hidden="true" href="#talks--posters">
-
-    </a>Talks &amp; Posters
-    </h2>
-    <p>"Theoretical understanding of novel nematicity in iron-based superconductors", talks presented at <a
-      href="http://bssqm.csp.escience.cn/dct/page/1" rel="nofollow">2019 Beijing Summer School on Quantum
-      Magnetism</a></p>
-    <p>”Theoretical study on the phonon softening in iron-based superconductors”, posters presented at the conference
-      <a href="http://m2s2018.medmeeting.org/3046?lang=en" rel="nofollow">M2S-2018</a></p>
-    <h2><a href="">
-    </a>Teaching Experience
-    </h2>
-    <p>2018 Fall &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;    Group Theory<br>
-       2017 Fall &nbsp; &nbsp; &nbsp;  &nbsp;&nbsp;  Mechanis</p>
-  </div>
-</div>
 </body>
 </html>
